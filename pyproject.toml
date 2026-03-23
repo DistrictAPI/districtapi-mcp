@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "districtapi-mcp"
+version = "0.1.0"
+description = "MCP server for districtapi.dev — US school district and school data for AI agents"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "DistrictAPI", email = "hello@districtapi.dev" }]
+requires-python = ">=3.10"
+keywords = ["mcp", "school", "district", "nces", "education", "api"]
+dependencies = [
+    "mcp>=1.0.0",
+    "httpx>=0.27.0",
+]
+
+[project.urls]
+Homepage = "https://districtapi.dev"
+Repository = "https://github.com/DistrictAPI/districtapi-mcp"
+
+[project.scripts]
+districtapi-mcp = "districtapi_mcp.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/districtapi_mcp"]
