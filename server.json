@@ -1,0 +1,31 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "dev.districtapi/districtapi-mcp",
+  "title": "DistrictAPI",
+  "description": "US public school districts and schools by address \u2014 enrollment, demographics, boundaries",
+  "version": "0.1.1",
+  "websiteUrl": "https://districtapi.dev",
+  "repository": {
+    "url": "https://github.com/DistrictAPI/districtapi-mcp",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "districtapi-mcp",
+      "version": "0.1.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "DISTRICTAPI_KEY",
+          "description": "API key from https://districtapi.dev (free tier: 500 requests/month)",
+          "isRequired": true,
+          "isSecret": true,
+          "format": "string"
+        }
+      ]
+    }
+  ]
+}
