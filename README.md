@@ -1,5 +1,8 @@
 # districtapi-mcp
 
+<!-- Links this package to its entry in the official MCP registry -->
+mcp-name: dev.districtapi/districtapi-mcp
+
 MCP server for [districtapi.dev](https://districtapi.dev) — US school district and school data for AI agents.
 
 Expose school district lookups as tools to any MCP-compatible AI assistant (Claude, Cursor, Copilot, etc.).
