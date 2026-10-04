@@ -6,7 +6,7 @@ Please report security issues **privately** via GitHub's
 [private vulnerability reporting](../../security/advisories/new) on this
 repository, rather than opening a public issue.
 
-If that is unavailable, email **security@districtapi.dev**.
+If that is unavailable, email **hello@districtapi.dev**.
 
 Please include enough detail to reproduce: the affected tool or endpoint, the
 input used, and what you observed. A proof-of-concept against your own API key
